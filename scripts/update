@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Update all package definitions
+echo "Checking brew for available updates..."
+brew update
+
+# Perform the upgrade
+echo "Upgrading brew packages..."
+brew upgrade
+
+# Check for OS updates
+echo "Checking for OS updates..."
+sudo softwareupdate -i -a
